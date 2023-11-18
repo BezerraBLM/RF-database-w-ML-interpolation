@@ -24,7 +24,7 @@ import time
 print('\nProjeto RF Web\n\nAluno:\nBruno Luís Monteiro Bezerra -UNB\n\nProfessor:\nGeorge Sand Leão de França- USP')
 
 #abrindo o banco de dados
-banco=sqlite3.connect('primeiro_banco.db')
+banco=sqlite3.connect('database_final.db')
 cursor=banco.cursor()
 x=0
 #loop para as opções
@@ -132,7 +132,7 @@ while True:
                 x_min, y_min, x_max, y_max = gdf_brasil.total_bounds
 
                 # Definir o número de pontos na grade
-                num_points = 10
+                num_points = 100
 
                 # Criar uma malha irregular seguindo os limites do Brasil
                 grid_points = []
